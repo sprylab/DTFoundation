@@ -55,3 +55,5 @@ The DTFoundation.framework is using the "Fake Framework" template put together b
 1. Include the DTFoundation.framework in your project. 
 2. Import the DTFoundation.h in your PCH file or include the individual header files where needed.
 3. Add -ObjC to "Other Linker Flags".
+
+
