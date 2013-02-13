@@ -21,6 +21,68 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		051AB2FF16C81AE600466FA3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051AB2FE16C81AE600466FA3 /* Cocoa.framework */; };
+		052B1CE616C6856E005C3CA2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 052B1CE416C6856E005C3CA2 /* InfoPlist.strings */; };
+		052B1CEF16C685F7005C3CA2 /* DTHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB48A16A5E1D20010CD85 /* DTHTMLParser.m */; };
+		052B1CF016C685FB005C3CA2 /* NSString+DTUTI.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB4FA16A5E5950010CD85 /* NSString+DTUTI.m */; };
+		052B1CF516C6860D005C3CA2 /* DTScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB4B916A5E3B20010CD85 /* DTScrollView.m */; };
+		052B1CF616C6860F005C3CA2 /* NSDocument+DTFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB4E516A5E5590010CD85 /* NSDocument+DTFoundation.m */; };
+		052B1CF716C68611005C3CA2 /* NSImage+DTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB4E716A5E5590010CD85 /* NSImage+DTUtilities.m */; };
+		052B1CF816C68613005C3CA2 /* NSValue+DTConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB4E916A5E5590010CD85 /* NSValue+DTConversion.m */; };
+		052B1CF916C68615005C3CA2 /* NSView+DTAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB4EB16A5E5590010CD85 /* NSView+DTAutoLayout.m */; };
+		052B1CFA16C68616005C3CA2 /* NSWindowController+DTPanelControllerPresenting.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB4ED16A5E5590010CD85 /* NSWindowController+DTPanelControllerPresenting.m */; };
+		052B1CFB16C6861C005C3CA2 /* DTScriptExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = A7556F65162EEF9200A69F63 /* DTScriptExpression.m */; };
+		052B1CFC16C6861D005C3CA2 /* DTScriptVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = A70D5694162FD30700120A98 /* DTScriptVariable.m */; };
+		052B1CFD16C6861F005C3CA2 /* NSScanner+DTScripting.m in Sources */ = {isa = PBXBuildFile; fileRef = A70D569D162FD60600120A98 /* NSScanner+DTScripting.m */; };
+		052B1CFE16C68620005C3CA2 /* DTASN1Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = A760F52B14F24B9F00AD1B0E /* DTASN1Parser.m */; };
+		052B1CFF16C68621005C3CA2 /* DTExtendedFileAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D6F2E415063448001CACDD /* DTExtendedFileAttributes.m */; };
+		052B1D0116C68626005C3CA2 /* NSArray+DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = A73D5BAA155271FD0024BDB7 /* NSArray+DTError.m */; };
+		052B1D0216C68627005C3CA2 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A79500F4161D680000358BC3 /* NSData+Base64.m */; };
+		052B1D0316C68628005C3CA2 /* NSData+DTCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = A79500F6161D680000358BC3 /* NSData+DTCrypto.m */; };
+		052B1D0416C68629005C3CA2 /* NSDictionary+DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0AA24153C1B160020F18B /* NSDictionary+DTError.m */; };
+		052B1D0516C6862A005C3CA2 /* NSMutableArray+DTMoving.m in Sources */ = {isa = PBXBuildFile; fileRef = A766135F16143F8A00DF6C2B /* NSMutableArray+DTMoving.m */; };
+		052B1D0616C6862C005C3CA2 /* NSObject+DTRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FE30671548009A00F5DC66 /* NSObject+DTRuntime.m */; };
+		052B1D0716C6862D005C3CA2 /* NSString+DTFormatNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = A70B4CCB1486621B00873A4A /* NSString+DTFormatNumbers.m */; };
+		052B1D0816C6862E005C3CA2 /* NSString+DTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0AA49153C233E0020F18B /* NSString+DTUtilities.m */; };
+		052B1D0916C6862F005C3CA2 /* NSString+DTPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D8628014EBF65C001436AF /* NSString+DTPaths.m */; };
+		052B1D0A16C68631005C3CA2 /* NSString+DTURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0AA2A153C1FE40020F18B /* NSString+DTURLEncoding.m */; };
+		052B1D0B16C68632005C3CA2 /* NSURL+DTUnshorten.m in Sources */ = {isa = PBXBuildFile; fileRef = A79231CD157A0B9400C3ACBB /* NSURL+DTUnshorten.m */; };
+		052B1D0C16C68633005C3CA2 /* NSFileWrapper+DTCopying.m in Sources */ = {isa = PBXBuildFile; fileRef = A73B6F8A163169BB002CCCA7 /* NSFileWrapper+DTCopying.m */; };
+		052B1D0D16C68635005C3CA2 /* NSURL+DTComparing.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FAA3881652291D006ED151 /* NSURL+DTComparing.m */; };
+		052B1D0E16C68639005C3CA2 /* DTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0AA6C153C39920020F18B /* DTUtils.m */; };
+		052B1D0F16C6863A005C3CA2 /* DTFoundationConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB1726A16301F0D00B44EDC /* DTFoundationConstants.m */; };
+		052B1D1016C68652005C3CA2 /* DTUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A7D0AA6B153C39920020F18B /* DTUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1116C68654005C3CA2 /* NSArray+DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = A73D5BA9155271FD0024BDB7 /* NSArray+DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1216C68656005C3CA2 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = A79500F3161D680000358BC3 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1316C68658005C3CA2 /* NSData+DTCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = A79500F5161D680000358BC3 /* NSData+DTCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1416C6865A005C3CA2 /* NSDictionary+DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = A7D0AA23153C1B160020F18B /* NSDictionary+DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1516C6865C005C3CA2 /* NSMutableArray+DTMoving.h in Headers */ = {isa = PBXBuildFile; fileRef = A766135E16143F8A00DF6C2B /* NSMutableArray+DTMoving.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1616C6865E005C3CA2 /* NSObject+DTRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = A7FE30631548005700F5DC66 /* NSObject+DTRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1716C6865F005C3CA2 /* NSString+DTFormatNumbers.h in Headers */ = {isa = PBXBuildFile; fileRef = A70B4CCA1486621B00873A4A /* NSString+DTFormatNumbers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1816C68660005C3CA2 /* NSString+DTUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A7D0AA48153C233E0020F18B /* NSString+DTUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1916C68662005C3CA2 /* NSString+DTPaths.h in Headers */ = {isa = PBXBuildFile; fileRef = A7D8627F14EBF65C001436AF /* NSString+DTPaths.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1A16C68664005C3CA2 /* NSString+DTURLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A7D0AA29153C1FE40020F18B /* NSString+DTURLEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1B16C68667005C3CA2 /* NSURL+DTUnshorten.h in Headers */ = {isa = PBXBuildFile; fileRef = A79231CC157A0B9400C3ACBB /* NSURL+DTUnshorten.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1C16C6866C005C3CA2 /* NSFileWrapper+DTCopying.h in Headers */ = {isa = PBXBuildFile; fileRef = A73B6F89163169BB002CCCA7 /* NSFileWrapper+DTCopying.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1D16C6866D005C3CA2 /* NSURL+DTComparing.h in Headers */ = {isa = PBXBuildFile; fileRef = A7FAA3871652291D006ED151 /* NSURL+DTComparing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1E16C68670005C3CA2 /* DTScriptExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = A7556F64162EEF9200A69F63 /* DTScriptExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D1F16C68671005C3CA2 /* DTScriptVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = A70D5693162FD30700120A98 /* DTScriptVariable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D2016C68672005C3CA2 /* NSScanner+DTScripting.h in Headers */ = {isa = PBXBuildFile; fileRef = A70D569C162FD60600120A98 /* NSScanner+DTScripting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D2116C68673005C3CA2 /* DTASN1Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = A760F52A14F24B9F00AD1B0E /* DTASN1Parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D2216C68674005C3CA2 /* DTExtendedFileAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = A7D6F2E315063448001CACDD /* DTExtendedFileAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D2416C68677005C3CA2 /* DTScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB4B816A5E3B20010CD85 /* DTScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D2516C68678005C3CA2 /* NSDocument+DTFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB4E416A5E5590010CD85 /* NSDocument+DTFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D2616C68679005C3CA2 /* NSImage+DTUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB4E616A5E5590010CD85 /* NSImage+DTUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D2716C6867B005C3CA2 /* NSValue+DTConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB4E816A5E5590010CD85 /* NSValue+DTConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D2816C6867C005C3CA2 /* NSView+DTAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB4EA16A5E5590010CD85 /* NSView+DTAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D2916C6867D005C3CA2 /* NSWindowController+DTPanelControllerPresenting.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB4EC16A5E5590010CD85 /* NSWindowController+DTPanelControllerPresenting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D2D16C68682005C3CA2 /* DTZipArchiveGZip.h in Headers */ = {isa = PBXBuildFile; fileRef = C04943358446F1A9BA86F458 /* DTZipArchiveGZip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D2E16C68684005C3CA2 /* NSString+DTUTI.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB4F916A5E5950010CD85 /* NSString+DTUTI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D2F16C68685005C3CA2 /* DTHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB48916A5E1D20010CD85 /* DTHTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D3016C68688005C3CA2 /* DTFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = A70B4CC51486621B00873A4A /* DTFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052B1D4216C68AC6005C3CA2 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 052B1D3C16C68812005C3CA2 /* libxml2.dylib */; };
+		052B1D4316C68AE9005C3CA2 /* DTVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = A70B4CC81486621B00873A4A /* DTVersion.m */; };
+		05EC121516C68DC800DAECF2 /* DTVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = A70B4CC71486621B00873A4A /* DTVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D7CE541166613B60028D339 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D60FF715D3B28B00AEDD1B /* libxml2.dylib */; };
 		3D7CE542166613B60028D339 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F4DFFA147FD08F00F4059A /* Foundation.framework */; };
 		A70B4CD01486621B00873A4A /* DTFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = A70B4CC51486621B00873A4A /* DTFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -336,6 +398,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		051AB2FE16C81AE600466FA3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		052B1CDF16C6856E005C3CA2 /* DTFoundation */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DTFoundation; path = "../../../../../../../../Documents/XcodeProjects/ste-engine/DTCoreText/Core/Externals/DTFoundation"; sourceTree = BUILT_PRODUCTS_DIR; };
+		052B1CE316C6856E005C3CA2 /* DTFoundation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DTFoundation-Info.plist"; sourceTree = "<group>"; };
+		052B1CE516C6856E005C3CA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		052B1CE716C6856E005C3CA2 /* DTFoundation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DTFoundation-Prefix.pch"; sourceTree = "<group>"; };
+		052B1D3C16C68812005C3CA2 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
 		3D7CE547166613B60028D339 /* libDTHTMLParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDTHTMLParser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70B4CC51486621B00873A4A /* DTFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFoundation.h; sourceTree = "<group>"; };
 		A70B4CC71486621B00873A4A /* DTVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTVersion.h; sourceTree = "<group>"; };
@@ -496,6 +564,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		052B1CDB16C6856E005C3CA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051AB2FF16C81AE600466FA3 /* Cocoa.framework in Frameworks */,
+				052B1D4216C68AC6005C3CA2 /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3D7CE540166613B60028D339 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -582,6 +659,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		052B1CE116C6856E005C3CA2 /* DTFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				052B1CE216C6856E005C3CA2 /* Supporting Files */,
+			);
+			path = DTFoundation;
+			sourceTree = "<group>";
+		};
+		052B1CE216C6856E005C3CA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				052B1CE316C6856E005C3CA2 /* DTFoundation-Info.plist */,
+				052B1CE416C6856E005C3CA2 /* InfoPlist.strings */,
+				052B1CE716C6856E005C3CA2 /* DTFoundation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A70B4CC41486621B00873A4A /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -876,9 +971,12 @@
 		A7F4DF98147FB61500F4059A = {
 			isa = PBXGroup;
 			children = (
+				051AB2FE16C81AE600466FA3 /* Cocoa.framework */,
+				052B1D3C16C68812005C3CA2 /* libxml2.dylib */,
 				A7D60FE415D3B15300AEDD1B /* Test */,
 				A70B4CC41486621B00873A4A /* Core */,
 				A70B4CDA1486626900873A4A /* Documentation */,
+				052B1CE116C6856E005C3CA2 /* DTFoundation */,
 				A7F4DFA6147FB61500F4059A /* Products */,
 				A7AB49DB1483C47F00028FE8 /* Frameworks */,
 			);
@@ -896,6 +994,7 @@
 				3D7CE547166613B60028D339 /* libDTHTMLParser.a */,
 				A78220BA168060CA005B602D /* libDTUTI.a */,
 				A7E889A416A9B190009EF0DF /* libDTUTI.a */,
+				052B1CDF16C6856E005C3CA2 /* DTFoundation */,
 			);
 			name = Products;
 			path = ../..;
@@ -917,6 +1016,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		052B1CDC16C6856E005C3CA2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052B1D1016C68652005C3CA2 /* DTUtils.h in Headers */,
+				052B1D3016C68688005C3CA2 /* DTFoundation.h in Headers */,
+				052B1D1116C68654005C3CA2 /* NSArray+DTError.h in Headers */,
+				052B1D1516C6865C005C3CA2 /* NSMutableArray+DTMoving.h in Headers */,
+				052B1D1416C6865A005C3CA2 /* NSDictionary+DTError.h in Headers */,
+				052B1D1316C68658005C3CA2 /* NSData+DTCrypto.h in Headers */,
+				052B1D1716C6865F005C3CA2 /* NSString+DTFormatNumbers.h in Headers */,
+				052B1D1916C68662005C3CA2 /* NSString+DTPaths.h in Headers */,
+				052B1D1816C68660005C3CA2 /* NSString+DTUtilities.h in Headers */,
+				052B1D2416C68677005C3CA2 /* DTScrollView.h in Headers */,
+				052B1D2516C68678005C3CA2 /* NSDocument+DTFoundation.h in Headers */,
+				052B1D2F16C68685005C3CA2 /* DTHTMLParser.h in Headers */,
+				052B1D1E16C68670005C3CA2 /* DTScriptExpression.h in Headers */,
+				052B1D2616C68679005C3CA2 /* NSImage+DTUtilities.h in Headers */,
+				052B1D2E16C68684005C3CA2 /* NSString+DTUTI.h in Headers */,
+				052B1D1C16C6866C005C3CA2 /* NSFileWrapper+DTCopying.h in Headers */,
+				052B1D1F16C68671005C3CA2 /* DTScriptVariable.h in Headers */,
+				052B1D2716C6867B005C3CA2 /* NSValue+DTConversion.h in Headers */,
+				052B1D2D16C68682005C3CA2 /* DTZipArchiveGZip.h in Headers */,
+				05EC121516C68DC800DAECF2 /* DTVersion.h in Headers */,
+				052B1D2816C6867C005C3CA2 /* NSView+DTAutoLayout.h in Headers */,
+				052B1D1D16C6866D005C3CA2 /* NSURL+DTComparing.h in Headers */,
+				052B1D2916C6867D005C3CA2 /* NSWindowController+DTPanelControllerPresenting.h in Headers */,
+				052B1D2016C68672005C3CA2 /* NSScanner+DTScripting.h in Headers */,
+				052B1D1A16C68664005C3CA2 /* NSString+DTURLEncoding.h in Headers */,
+				052B1D2116C68673005C3CA2 /* DTASN1Parser.h in Headers */,
+				052B1D2216C68674005C3CA2 /* DTExtendedFileAttributes.h in Headers */,
+				052B1D1B16C68667005C3CA2 /* NSURL+DTUnshorten.h in Headers */,
+				052B1D1616C6865E005C3CA2 /* NSObject+DTRuntime.h in Headers */,
+				052B1D1216C68656005C3CA2 /* NSData+Base64.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A70B4CE51486637E00873A4A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1046,6 +1182,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		052B1CDE16C6856E005C3CA2 /* DTFoundationMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 052B1CED16C6856E005C3CA2 /* Build configuration list for PBXNativeTarget "DTFoundationMac" */;
+			buildPhases = (
+				052B1CDA16C6856E005C3CA2 /* Sources */,
+				052B1CDB16C6856E005C3CA2 /* Frameworks */,
+				052B1CDC16C6856E005C3CA2 /* Headers */,
+				052B1CDD16C6856E005C3CA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DTFoundationMac;
+			productName = DTFoundation;
+			productReference = 052B1CDF16C6856E005C3CA2 /* DTFoundation */;
+			productType = "com.apple.product-type.framework";
+		};
 		3D7CE53D166613B60028D339 /* DTHTMLParser (Mac) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D7CE544166613B60028D339 /* Build configuration list for PBXNativeTarget "DTHTMLParser (Mac)" */;
@@ -1237,11 +1391,20 @@
 				A7E383D9160DFF8600CF72D6 /* DTZipArchive */,
 				A78220B9168060CA005B602D /* DTUTI (iOS) */,
 				A7E889A316A9B190009EF0DF /* DTUTI (Mac) */,
+				052B1CDE16C6856E005C3CA2 /* DTFoundationMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		052B1CDD16C6856E005C3CA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052B1CE616C6856E005C3CA2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7BAD10B1483F934000E2B6A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1329,6 +1492,42 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		052B1CDA16C6856E005C3CA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052B1CEF16C685F7005C3CA2 /* DTHTMLParser.m in Sources */,
+				052B1CF516C6860D005C3CA2 /* DTScrollView.m in Sources */,
+				052B1CF816C68613005C3CA2 /* NSValue+DTConversion.m in Sources */,
+				052B1CFA16C68616005C3CA2 /* NSWindowController+DTPanelControllerPresenting.m in Sources */,
+				052B1CF716C68611005C3CA2 /* NSImage+DTUtilities.m in Sources */,
+				052B1CFC16C6861D005C3CA2 /* DTScriptVariable.m in Sources */,
+				052B1CF916C68615005C3CA2 /* NSView+DTAutoLayout.m in Sources */,
+				052B1CFD16C6861F005C3CA2 /* NSScanner+DTScripting.m in Sources */,
+				052B1CF616C6860F005C3CA2 /* NSDocument+DTFoundation.m in Sources */,
+				052B1CFF16C68621005C3CA2 /* DTExtendedFileAttributes.m in Sources */,
+				052B1CFE16C68620005C3CA2 /* DTASN1Parser.m in Sources */,
+				052B1D0216C68627005C3CA2 /* NSData+Base64.m in Sources */,
+				052B1D0316C68628005C3CA2 /* NSData+DTCrypto.m in Sources */,
+				052B1D0616C6862C005C3CA2 /* NSObject+DTRuntime.m in Sources */,
+				052B1D0B16C68632005C3CA2 /* NSURL+DTUnshorten.m in Sources */,
+				052B1D0D16C68635005C3CA2 /* NSURL+DTComparing.m in Sources */,
+				052B1D4316C68AE9005C3CA2 /* DTVersion.m in Sources */,
+				052B1CFB16C6861C005C3CA2 /* DTScriptExpression.m in Sources */,
+				052B1D0716C6862D005C3CA2 /* NSString+DTFormatNumbers.m in Sources */,
+				052B1D0916C6862F005C3CA2 /* NSString+DTPaths.m in Sources */,
+				052B1D0C16C68633005C3CA2 /* NSFileWrapper+DTCopying.m in Sources */,
+				052B1D0A16C68631005C3CA2 /* NSString+DTURLEncoding.m in Sources */,
+				052B1D0816C6862E005C3CA2 /* NSString+DTUtilities.m in Sources */,
+				052B1D0F16C6863A005C3CA2 /* DTFoundationConstants.m in Sources */,
+				052B1D0E16C68639005C3CA2 /* DTUtils.m in Sources */,
+				052B1D0416C68629005C3CA2 /* NSDictionary+DTError.m in Sources */,
+				052B1D0516C6862A005C3CA2 /* NSMutableArray+DTMoving.m in Sources */,
+				052B1D0116C68626005C3CA2 /* NSArray+DTError.m in Sources */,
+				052B1CF016C685FB005C3CA2 /* NSString+DTUTI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3D7CE53E166613B60028D339 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1522,7 +1721,74 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		052B1CE416C6856E005C3CA2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				052B1CE516C6856E005C3CA2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		052B1CEB16C6856E005C3CA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DTFoundation/DTFoundation-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "DTFoundation/DTFoundation-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		052B1CEC16C6856E005C3CA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DTFoundation/DTFoundation-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "DTFoundation/DTFoundation-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 		3D7CE545166613B60028D339 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1968,6 +2234,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		052B1CED16C6856E005C3CA2 /* Build configuration list for PBXNativeTarget "DTFoundationMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052B1CEB16C6856E005C3CA2 /* Debug */,
+				052B1CEC16C6856E005C3CA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3D7CE544166613B60028D339 /* Build configuration list for PBXNativeTarget "DTHTMLParser (Mac)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
