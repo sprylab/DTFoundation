@@ -1573,7 +1573,7 @@
 				GCC_PREFIX_HEADER = "Core/DTFoundation-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = DTFoundation;
-				PUBLIC_HEADERS_FOLDER_PATH = ../../DTFoundation;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/DTFoundation;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1586,7 +1586,7 @@
 				GCC_PREFIX_HEADER = "Core/DTFoundation-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = DTFoundation;
-				PUBLIC_HEADERS_FOLDER_PATH = ../../DTFoundation;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/DTFoundation;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
