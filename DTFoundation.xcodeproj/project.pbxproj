@@ -170,7 +170,7 @@
 		A76DB4B216A5E37F0010CD85 /* DTSmartPagingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB49716A5E37F0010CD85 /* DTSmartPagingScrollView.h */; };
 		A76DB4B316A5E37F0010CD85 /* DTSmartPagingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB49816A5E37F0010CD85 /* DTSmartPagingScrollView.m */; };
 		A76DB4B416A5E37F0010CD85 /* DTSmartPagingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB49816A5E37F0010CD85 /* DTSmartPagingScrollView.m */; };
-		A76DB4BA16A5E3B20010CD85 /* DTScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB4B816A5E3B20010CD85 /* DTScrollView.h */; };
+		A76DB4BA16A5E3B20010CD85 /* DTScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB4B816A5E3B20010CD85 /* DTScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A76DB4BB16A5E3B20010CD85 /* DTScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB4B916A5E3B20010CD85 /* DTScrollView.m */; };
 		A76DB4BF16A5E4770010CD85 /* DTZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB4BE16A5E4770010CD85 /* DTZipArchive.m */; };
 		A76DB4CC16A5E5100010CD85 /* NSURL+DTAppLinks.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB4C016A5E50D0010CD85 /* NSURL+DTAppLinks.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -199,7 +199,7 @@
 		A76DB4E316A5E5100010CD85 /* UIWebView+DTFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB4CB16A5E5100010CD85 /* UIWebView+DTFoundation.m */; };
 		A76DB4EE16A5E5590010CD85 /* NSDocument+DTFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB4E416A5E5590010CD85 /* NSDocument+DTFoundation.h */; };
 		A76DB4EF16A5E5590010CD85 /* NSDocument+DTFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB4E516A5E5590010CD85 /* NSDocument+DTFoundation.m */; };
-		A76DB4F016A5E5590010CD85 /* NSImage+DTUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB4E616A5E5590010CD85 /* NSImage+DTUtilities.h */; };
+		A76DB4F016A5E5590010CD85 /* NSImage+DTUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB4E616A5E5590010CD85 /* NSImage+DTUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A76DB4F116A5E5590010CD85 /* NSImage+DTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB4E716A5E5590010CD85 /* NSImage+DTUtilities.m */; };
 		A76DB4F216A5E5590010CD85 /* NSValue+DTConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB4E816A5E5590010CD85 /* NSValue+DTConversion.h */; };
 		A76DB4F316A5E5590010CD85 /* NSValue+DTConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = A76DB4E916A5E5590010CD85 /* NSValue+DTConversion.m */; };
@@ -991,7 +991,7 @@
 				A710A5001607556000437D36 /* libDTFoundation_Mac.a */,
 				A7E383C2160DFEDB00CF72D6 /* libDTHTMLParser.a */,
 				A7E383DA160DFF8600CF72D6 /* libDTZipArchive.a */,
-				3D7CE547166613B60028D339 /* libDTHTMLParser.a */,
+				3D7CE547166613B60028D339 /* libDTHTMLParser_Mac.a */,
 				A78220BA168060CA005B602D /* libDTUTI.a */,
 				A7E889A416A9B190009EF0DF /* libDTUTI.a */,
 				052B1CDF16C6856E005C3CA2 /* DTFoundationMac.framework */,
@@ -1105,6 +1105,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76DB4F016A5E5590010CD85 /* NSImage+DTUtilities.h in Headers */,
+				A76DB4BA16A5E3B20010CD85 /* DTScrollView.h in Headers */,
 				A766136216143F8A00DF6C2B /* NSMutableArray+DTMoving.h in Headers */,
 				A79500F9161D680000358BC3 /* NSData+Base64.h in Headers */,
 				A79500FF161D680000358BC3 /* NSData+DTCrypto.h in Headers */,
@@ -1115,9 +1117,7 @@
 				A73B6F8D163169BB002CCCA7 /* NSFileWrapper+DTCopying.h in Headers */,
 				E2262E82163846AB00BFDAD7 /* DTFoundation.h in Headers */,
 				A7FAA38A1652291D006ED151 /* NSURL+DTComparing.h in Headers */,
-				A76DB4BA16A5E3B20010CD85 /* DTScrollView.h in Headers */,
 				A76DB4EE16A5E5590010CD85 /* NSDocument+DTFoundation.h in Headers */,
-				A76DB4F016A5E5590010CD85 /* NSImage+DTUtilities.h in Headers */,
 				A76DB4F216A5E5590010CD85 /* NSValue+DTConversion.h in Headers */,
 				A76DB4F416A5E5590010CD85 /* NSView+DTAutoLayout.h in Headers */,
 				A76DB4F616A5E5590010CD85 /* NSWindowController+DTPanelControllerPresenting.h in Headers */,
@@ -1214,7 +1214,7 @@
 			);
 			name = "DTHTMLParser (Mac)";
 			productName = DTHTMLParser;
-			productReference = 3D7CE547166613B60028D339 /* libDTHTMLParser.a */;
+			productReference = 3D7CE547166613B60028D339 /* libDTHTMLParser_Mac.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A70B4CE61486637E00873A4A /* Static Library */ = {
@@ -1805,7 +1805,7 @@
 				GCC_PREFIX_HEADER = "Core/DTFoundation-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				PRODUCT_NAME = DTHTMLParser;
+				PRODUCT_NAME = DTHTMLParser_Mac;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1826,7 +1826,7 @@
 				GCC_PREFIX_HEADER = "Core/DTFoundation-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				PRODUCT_NAME = DTHTMLParser;
+				PRODUCT_NAME = DTHTMLParser_Mac;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1841,7 +1841,7 @@
 				GCC_PREFIX_HEADER = "Core/DTFoundation-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = DTFoundation;
-				PUBLIC_HEADERS_FOLDER_PATH = ../../DTFoundation;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/DTFoundation;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1854,7 +1854,7 @@
 				GCC_PREFIX_HEADER = "Core/DTFoundation-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = DTFoundation;
-				PUBLIC_HEADERS_FOLDER_PATH = ../../DTFoundation;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/DTFoundation;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -1878,7 +1878,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = DTFoundation_Mac;
-				PUBLIC_HEADERS_FOLDER_PATH = ../DTFoundation;
+				PUBLIC_HEADERS_FOLDER_PATH = DTFoundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -1904,7 +1904,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = DTFoundation_Mac;
-				PUBLIC_HEADERS_FOLDER_PATH = ../DTFoundation;
+				PUBLIC_HEADERS_FOLDER_PATH = DTFoundation;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
