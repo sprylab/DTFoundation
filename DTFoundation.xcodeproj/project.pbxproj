@@ -399,7 +399,7 @@
 
 /* Begin PBXFileReference section */
 		051AB2FE16C81AE600466FA3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		052B1CDF16C6856E005C3CA2 /* DTFoundation */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DTFoundation; path = "../../../../../../../../Documents/XcodeProjects/ste-engine/DTCoreText/Core/Externals/DTFoundation"; sourceTree = BUILT_PRODUCTS_DIR; };
+		052B1CDF16C6856E005C3CA2 /* DTFoundationMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTFoundationMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		052B1CE316C6856E005C3CA2 /* DTFoundation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DTFoundation-Info.plist"; sourceTree = "<group>"; };
 		052B1CE516C6856E005C3CA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		052B1CE716C6856E005C3CA2 /* DTFoundation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DTFoundation-Prefix.pch"; sourceTree = "<group>"; };
@@ -994,7 +994,7 @@
 				3D7CE547166613B60028D339 /* libDTHTMLParser.a */,
 				A78220BA168060CA005B602D /* libDTUTI.a */,
 				A7E889A416A9B190009EF0DF /* libDTUTI.a */,
-				052B1CDF16C6856E005C3CA2 /* DTFoundation */,
+				052B1CDF16C6856E005C3CA2 /* DTFoundationMac.framework */,
 			);
 			name = Products;
 			path = ../..;
@@ -1197,7 +1197,7 @@
 			);
 			name = DTFoundationMac;
 			productName = DTFoundation;
-			productReference = 052B1CDF16C6856E005C3CA2 /* DTFoundation */;
+			productReference = 052B1CDF16C6856E005C3CA2 /* DTFoundationMac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3D7CE53D166613B60028D339 /* DTHTMLParser (Mac) */ = {
@@ -1753,6 +1753,7 @@
 				GCC_PREFIX_HEADER = "DTFoundation/DTFoundation-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = "DTFoundation/DTFoundation-Info.plist";
+				INSTALL_PATH = "@rpath";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1782,6 +1783,7 @@
 				GCC_PREFIX_HEADER = "DTFoundation/DTFoundation-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = "DTFoundation/DTFoundation-Info.plist";
+				INSTALL_PATH = "@rpath";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
