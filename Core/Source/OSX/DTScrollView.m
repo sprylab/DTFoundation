@@ -10,6 +10,7 @@
 
 @implementation DTScrollView
 
+#if ! TARGET_OS_IPHONE
 - (void)scrollWheel:(NSEvent *)theEvent
 {
 	BOOL shouldForwardScroll = NO;
@@ -44,5 +45,6 @@
 		[super scrollWheel:theEvent];
 	}
 }
+#endif
 
 @end
