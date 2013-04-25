@@ -11,51 +11,49 @@
 
 @implementation UIView (DTDebug)
 
-
-- (void)methodCalledNotFromMainQueue:(NSString *)methodName
+- (void)methodCalledNotFromMainThread:(NSString *)methodName
 {
-    NSLog(@"-[%@ %@] being called on background queue. Break on -[UIView methodCalledNotFromMainQueue:] to find out where", NSStringFromClass([self class]), methodName);
+	NSLog(@"-[%@ %@] being called on background queue. Break on -[UIView methodCalledNotFromMainThread:] to find out where", NSStringFromClass([self class]), methodName);
 }
 
-- (void)_setNeedsLayout_MainQueueCheck
+- (void)_setNeedsLayout_MainThreadCheck
 {
-    if (dispatch_get_current_queue() != dispatch_get_main_queue())
-    {
-        [self methodCalledNotFromMainQueue:NSStringFromSelector(_cmd)];
-    }
-    
-    // not really an endless loop, this calls the original
-    [self _setNeedsLayout_MainQueueCheck]; 
+	if (![NSThread isMainThread])
+	{
+		[self methodCalledNotFromMainThread:NSStringFromSelector(_cmd)];
+	}
+	
+	// not really an endless loop, this calls the original
+	[self _setNeedsLayout_MainThreadCheck];
 }
 
-- (void)_setNeedsDisplay_MainQueueCheck
+- (void)_setNeedsDisplay_MainThreadCheck
 {
-    if (dispatch_get_current_queue() != dispatch_get_main_queue())
-    {
-        [self methodCalledNotFromMainQueue:NSStringFromSelector(_cmd)];
-    }
-    
-    // not really an endless loop, this calls the original
-    [self _setNeedsDisplay_MainQueueCheck];
+	if (![NSThread isMainThread])
+	{
+		[self methodCalledNotFromMainThread:NSStringFromSelector(_cmd)];
+	}
+	
+	// not really an endless loop, this calls the original
+	[self _setNeedsDisplay_MainThreadCheck];
 }
 
-- (void)_setNeedsDisplayInRect_MainQueueCheck:(CGRect)rect
+- (void)_setNeedsDisplayInRect_MainThreadCheck:(CGRect)rect
 {
-    if (dispatch_get_current_queue() != dispatch_get_main_queue())
-    {
-        [self methodCalledNotFromMainQueue:NSStringFromSelector(_cmd)];
-    }
-    
-    // not really an endless loop, this calls the original
-    [self _setNeedsDisplayInRect_MainQueueCheck:rect];
+	if (![NSThread isMainThread])
+	{
+		[self methodCalledNotFromMainThread:NSStringFromSelector(_cmd)];
+	}
+	
+	// not really an endless loop, this calls the original
+	[self _setNeedsDisplayInRect_MainThreadCheck:rect];
 }
 
-+ (void)toggleViewMainQueueChecking
++ (void)toggleViewMainThreadChecking
 {
-	[UIView swizzleMethod:@selector(setNeedsLayout) withMethod:@selector(_setNeedsLayout_MainQueueCheck)];
-	[UIView swizzleMethod:@selector(setNeedsDisplay) withMethod:@selector(_setNeedsDisplay_MainQueueCheck)];
-	[UIView swizzleMethod:@selector(setNeedsDisplayInRect:) withMethod:@selector(_setNeedsDisplayInRect_MainQueueCheck:)];
+	[UIView swizzleMethod:@selector(setNeedsLayout) withMethod:@selector(_setNeedsLayout_MainThreadCheck)];
+	[UIView swizzleMethod:@selector(setNeedsDisplay) withMethod:@selector(_setNeedsDisplay_MainThreadCheck)];
+	[UIView swizzleMethod:@selector(setNeedsDisplayInRect:) withMethod:@selector(_setNeedsDisplayInRect_MainThreadCheck:)];
 }
-
 
 @end
