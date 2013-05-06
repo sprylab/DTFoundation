@@ -194,7 +194,7 @@
 		A79231D0157A0B9400C3ACBB /* NSURL+DTUnshorten.m in Sources */ = {isa = PBXBuildFile; fileRef = A79231CD157A0B9400C3ACBB /* NSURL+DTUnshorten.m */; };
 		A79231D1157A0B9400C3ACBB /* NSURL+DTUnshorten.m in Sources */ = {isa = PBXBuildFile; fileRef = A79231CD157A0B9400C3ACBB /* NSURL+DTUnshorten.m */; };
 		A79500F7161D680000358BC3 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = A79500F3161D680000358BC3 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A79500F8161D680000358BC3 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = A79500F3161D680000358BC3 /* NSData+Base64.h */; };
+		A79500F8161D680000358BC3 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = A79500F3161D680000358BC3 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A79500FA161D680000358BC3 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A79500F4161D680000358BC3 /* NSData+Base64.m */; };
 		A79500FB161D680000358BC3 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = A79500F4161D680000358BC3 /* NSData+Base64.m */; };
 		A79500FD161D680000358BC3 /* NSData+DTCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = A79500F5161D680000358BC3 /* NSData+DTCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -995,6 +995,7 @@
 				A77DD42714E825FC00F34B03 /* zip.h in Headers */,
 				A7D8628214EBF65C001436AF /* NSString+DTPaths.h in Headers */,
 				A760F52D14F24B9F00AD1B0E /* DTASN1Parser.h in Headers */,
+				A79500F8161D680000358BC3 /* NSData+Base64.h in Headers */,
 				C7B513C216E4972000494A2B /* DTScrollView.h in Headers */,
 				A7D6F2E615063448001CACDD /* DTExtendedFileAttributes.h in Headers */,
 				A7D0AA26153C1B160020F18B /* NSDictionary+DTError.h in Headers */,
@@ -1005,7 +1006,6 @@
 				A73D5BAC155271FD0024BDB7 /* NSArray+DTError.h in Headers */,
 				A79231CF157A0B9400C3ACBB /* NSURL+DTUnshorten.h in Headers */,
 				A766136116143F8A00DF6C2B /* NSMutableArray+DTMoving.h in Headers */,
-				A79500F8161D680000358BC3 /* NSData+Base64.h in Headers */,
 				A79500FE161D680000358BC3 /* NSData+DTCrypto.h in Headers */,
 				A7556F67162EEF9200A69F63 /* DTScriptExpression.h in Headers */,
 				A70D5696162FD30700120A98 /* DTScriptVariable.h in Headers */,
