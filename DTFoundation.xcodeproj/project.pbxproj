@@ -349,7 +349,7 @@
 
 /* Begin PBXFileReference section */
 		051AB2FE16C81AE600466FA3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		052B1CDF16C6856E005C3CA2 /* DTFoundationMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTFoundationMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		052B1CDF16C6856E005C3CA2 /* DTFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		052B1CE316C6856E005C3CA2 /* DTFoundation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DTFoundation-Info.plist"; sourceTree = "<group>"; };
 		052B1CE516C6856E005C3CA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		052B1CE716C6856E005C3CA2 /* DTFoundation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DTFoundation-Prefix.pch"; sourceTree = "<group>"; };
@@ -914,7 +914,7 @@
 				A7E383C2160DFEDB00CF72D6 /* libDTHTMLParser.a */,
 				A7E383DA160DFF8600CF72D6 /* libDTZipArchive.a */,
 				A78220BA168060CA005B602D /* libDTUTI.a */,
-				052B1CDF16C6856E005C3CA2 /* DTFoundationMac.framework */,
+				052B1CDF16C6856E005C3CA2 /* DTFoundation.framework */,
 			);
 			name = Products;
 			path = ../..;
@@ -1096,7 +1096,7 @@
 			);
 			name = DTFoundationMac;
 			productName = DTFoundation;
-			productReference = 052B1CDF16C6856E005C3CA2 /* DTFoundationMac.framework */;
+			productReference = 052B1CDF16C6856E005C3CA2 /* DTFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A70B4CE61486637E00873A4A /* DTFoundation */ = {
@@ -1558,7 +1558,7 @@
 				INSTALL_PATH = "@rpath";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DTFoundation;
 				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -1588,7 +1588,7 @@
 				INFOPLIST_FILE = "DTFoundation/DTFoundation-Info.plist";
 				INSTALL_PATH = "@rpath";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DTFoundation;
 				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = framework;
 			};
