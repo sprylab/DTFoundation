@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		379B69C5177CBE4E001174E8 /* DTFoundation_universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 379B69C8177CBE4E001174E8 /* Build configuration list for PBXAggregateTarget "DTFoundation_universal" */;
+			buildPhases = (
+				379B69C9177CBEA5001174E8 /* ShellScript */,
+				379B69CA177CBEF3001174E8 /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = DTFoundation_universal;
+			productName = DTFoundation_universal;
+		};
+		379B69E8177CC0B2001174E8 /* DTHTMLParser_universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 379B69FD177CC0B2001174E8 /* Build configuration list for PBXAggregateTarget "DTHTMLParser_universal" */;
+			buildPhases = (
+				379B69EA177CC0B2001174E8 /* ShellScript */,
+				379B69EB177CC0B2001174E8 /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = DTHTMLParser_universal;
+			productName = DTFoundation_universal;
+		};
 		A7F4DFED147FBAC600F4059A /* Documentation */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = A7F4DFEE147FBAC600F4059A /* Build configuration list for PBXAggregateTarget "Documentation" */;
@@ -84,6 +108,20 @@
 		052B1D4316C68AE9005C3CA2 /* DTVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = A70B4CC81486621B00873A4A /* DTVersion.m */; };
 		05DBD53E171C602C00A8019D /* DTHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A76DB48916A5E1D20010CD85 /* DTHTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05EC121516C68DC800DAECF2 /* DTVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = A70B4CC71486621B00873A4A /* DTVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		379B69ED177CC0B2001174E8 /* DTHTMLParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A76DB48916A5E1D20010CD85 /* DTHTMLParser.h */; };
+		379B6A1F177CC6DE001174E8 /* DTFoundation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A70B4CC51486621B00873A4A /* DTFoundation.h */; };
+		379B6A20177CC6DE001174E8 /* DTUtils.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7D0AA6B153C39920020F18B /* DTUtils.h */; };
+		379B6A21177CC7A8001174E8 /* DTASN1Parser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A760F52A14F24B9F00AD1B0E /* DTASN1Parser.h */; };
+		379B6A22177CC7A8001174E8 /* NSArray+DTError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A73D5BA9155271FD0024BDB7 /* NSArray+DTError.h */; };
+		379B6A23177CC7A8001174E8 /* NSData+Base64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A79500F3161D680000358BC3 /* NSData+Base64.h */; };
+		379B6A24177CC7A8001174E8 /* NSDictionary+DTError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7D0AA23153C1B160020F18B /* NSDictionary+DTError.h */; };
+		379B6A25177CC7A8001174E8 /* NSString+DTFormatNumbers.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A70B4CCA1486621B00873A4A /* NSString+DTFormatNumbers.h */; };
+		379B6A26177CC7A8001174E8 /* NSString+DTUtilities.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7D0AA48153C233E0020F18B /* NSString+DTUtilities.h */; };
+		379B6A27177CC7A8001174E8 /* NSString+DTPaths.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7D8627F14EBF65C001436AF /* NSString+DTPaths.h */; };
+		379B6A28177CC7CE001174E8 /* DTVersion.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A70B4CC71486621B00873A4A /* DTVersion.h */; };
+		379B6A29177CC7E4001174E8 /* DTScrollView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A76DB4B816A5E3B20010CD85 /* DTScrollView.h */; };
+		379B6A2A177CC817001174E8 /* NSString+DTURLEncoding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7D0AA29153C1FE40020F18B /* NSString+DTURLEncoding.h */; };
+		379B6A2B177CC829001174E8 /* DTExtendedFileAttributes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7D6F2E315063448001CACDD /* DTExtendedFileAttributes.h */; };
 		A70B4CD01486621B00873A4A /* DTFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = A70B4CC51486621B00873A4A /* DTFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A70B4CD11486621B00873A4A /* DTVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = A70B4CC71486621B00873A4A /* DTVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A70B4CD21486621B00873A4A /* DTVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = A70B4CC81486621B00873A4A /* DTVersion.m */; };
@@ -315,6 +353,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		379B69CA177CBEF3001174E8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SRCROOT}/$DEPLOYMENT_TARGET/$LIB_BASE_NAME";
+			dstSubfolderSpec = 0;
+			files = (
+				379B6A2B177CC829001174E8 /* DTExtendedFileAttributes.h in CopyFiles */,
+				379B6A2A177CC817001174E8 /* NSString+DTURLEncoding.h in CopyFiles */,
+				379B6A29177CC7E4001174E8 /* DTScrollView.h in CopyFiles */,
+				379B6A28177CC7CE001174E8 /* DTVersion.h in CopyFiles */,
+				379B6A21177CC7A8001174E8 /* DTASN1Parser.h in CopyFiles */,
+				379B6A22177CC7A8001174E8 /* NSArray+DTError.h in CopyFiles */,
+				379B6A23177CC7A8001174E8 /* NSData+Base64.h in CopyFiles */,
+				379B6A24177CC7A8001174E8 /* NSDictionary+DTError.h in CopyFiles */,
+				379B6A25177CC7A8001174E8 /* NSString+DTFormatNumbers.h in CopyFiles */,
+				379B6A26177CC7A8001174E8 /* NSString+DTUtilities.h in CopyFiles */,
+				379B6A27177CC7A8001174E8 /* NSString+DTPaths.h in CopyFiles */,
+				379B6A1F177CC6DE001174E8 /* DTFoundation.h in CopyFiles */,
+				379B6A20177CC6DE001174E8 /* DTUtils.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379B69EB177CC0B2001174E8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SRCROOT}/$DEPLOYMENT_TARGET/$LIB_BASE_NAME";
+			dstSubfolderSpec = 0;
+			files = (
+				379B69ED177CC0B2001174E8 /* DTHTMLParser.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A78220B8168060CA005B602D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -985,25 +1055,25 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A70B4CF2148663A800873A4A /* DTVersion.h in Headers */,
-				A70B4CF3148663A800873A4A /* NSString+DTFormatNumbers.h in Headers */,
 				A70B4CF7148663AF00873A4A /* DTFoundation.h in Headers */,
+				C7B513C216E4972000494A2B /* DTScrollView.h in Headers */,
+				A7D0AA6E153C39920020F18B /* DTUtils.h in Headers */,
+				A70B4CF2148663A800873A4A /* DTVersion.h in Headers */,
+				A760F52D14F24B9F00AD1B0E /* DTASN1Parser.h in Headers */,
+				A7D6F2E615063448001CACDD /* DTExtendedFileAttributes.h in Headers */,
+				A73D5BAC155271FD0024BDB7 /* NSArray+DTError.h in Headers */,
+				A79500F8161D680000358BC3 /* NSData+Base64.h in Headers */,
+				A7D0AA26153C1B160020F18B /* NSDictionary+DTError.h in Headers */,
+				A70B4CF3148663A800873A4A /* NSString+DTFormatNumbers.h in Headers */,
 				A77DD41714E825FC00F34B03 /* crypt.h in Headers */,
 				A77DD41B14E825FC00F34B03 /* ioapi.h in Headers */,
 				A77DD41F14E825FC00F34B03 /* mztools.h in Headers */,
 				A77DD42314E825FC00F34B03 /* unzip.h in Headers */,
 				A77DD42714E825FC00F34B03 /* zip.h in Headers */,
 				A7D8628214EBF65C001436AF /* NSString+DTPaths.h in Headers */,
-				A760F52D14F24B9F00AD1B0E /* DTASN1Parser.h in Headers */,
-				A79500F8161D680000358BC3 /* NSData+Base64.h in Headers */,
-				C7B513C216E4972000494A2B /* DTScrollView.h in Headers */,
-				A7D6F2E615063448001CACDD /* DTExtendedFileAttributes.h in Headers */,
-				A7D0AA26153C1B160020F18B /* NSDictionary+DTError.h in Headers */,
 				A7D0AA2C153C1FE40020F18B /* NSString+DTURLEncoding.h in Headers */,
 				A7D0AA4B153C233E0020F18B /* NSString+DTUtilities.h in Headers */,
-				A7D0AA6E153C39920020F18B /* DTUtils.h in Headers */,
 				A7FE30651548005700F5DC66 /* NSObject+DTRuntime.h in Headers */,
-				A73D5BAC155271FD0024BDB7 /* NSArray+DTError.h in Headers */,
 				A79231CF157A0B9400C3ACBB /* NSURL+DTUnshorten.h in Headers */,
 				A766136116143F8A00DF6C2B /* NSMutableArray+DTMoving.h in Headers */,
 				A79500FE161D680000358BC3 /* NSData+DTCrypto.h in Headers */,
@@ -1238,6 +1308,8 @@
 				A7E383D9160DFF8600CF72D6 /* DTZipArchive */,
 				A78220B9168060CA005B602D /* DTUTI (iOS) */,
 				052B1CDE16C6856E005C3CA2 /* DTFoundationMac */,
+				379B69C5177CBE4E001174E8 /* DTFoundation_universal */,
+				379B69E8177CC0B2001174E8 /* DTHTMLParser_universal */,
 			);
 		};
 /* End PBXProject section */
@@ -1283,6 +1355,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		379B69C9177CBEA5001174E8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "deploymentTarget=$DEPLOYMENT_TARGET\n\nif [ ! -d \"$deploymentTarget\" ]; then\nmkdir \"$deploymentTarget\"\nfi\npwd\nsh ../../../../../buildUniversalLib.sh DTFoundation $LIB_BASE_NAME \"$deploymentTarget\" ";
+		};
+		379B69EA177CC0B2001174E8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "deploymentTarget=$DEPLOYMENT_TARGET\n\nif [ ! -d \"$deploymentTarget\" ]; then\nmkdir \"$deploymentTarget\"\nfi\npwd\nsh ../../../../../buildUniversalLib.sh DTHTMLParser $LIB_BASE_NAME \"$deploymentTarget\"";
+		};
 		A7BAD1071483F934000E2B6A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1591,6 +1689,42 @@
 				PRODUCT_NAME = DTFoundation;
 				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		379B69C6177CBE4E001174E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_TARGET = ../../../../../sharedLib;
+				LIB_BASE_NAME = DTFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		379B69C7177CBE4E001174E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_TARGET = ../../../../../sharedLib;
+				LIB_BASE_NAME = DTFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		379B69FE177CC0B2001174E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_TARGET = ../../../../../sharedLib;
+				LIB_BASE_NAME = DTHTMLParser;
+				PRODUCT_NAME = DTHTMLParser_universal;
+			};
+			name = Debug;
+		};
+		379B69FF177CC0B2001174E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_TARGET = ../../../../../sharedLib;
+				LIB_BASE_NAME = DTHTMLParser;
+				PRODUCT_NAME = DTHTMLParser_universal;
 			};
 			name = Release;
 		};
@@ -1920,6 +2054,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		379B69C8177CBE4E001174E8 /* Build configuration list for PBXAggregateTarget "DTFoundation_universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379B69C6177CBE4E001174E8 /* Debug */,
+				379B69C7177CBE4E001174E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		379B69FD177CC0B2001174E8 /* Build configuration list for PBXAggregateTarget "DTHTMLParser_universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379B69FE177CC0B2001174E8 /* Debug */,
+				379B69FF177CC0B2001174E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		A70B4CEF1486637E00873A4A /* Build configuration list for PBXNativeTarget "DTFoundation" */ = {
 			isa = XCConfigurationList;
