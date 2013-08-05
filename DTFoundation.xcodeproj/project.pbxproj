@@ -1366,7 +1366,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "deploymentTarget=$DEPLOYMENT_TARGET\n\nif [ ! -d \"$deploymentTarget\" ]; then\nmkdir \"$deploymentTarget\"\nfi\npwd\nsh ../../../../../buildUniversalLib.sh DTFoundation $LIB_BASE_NAME \"$deploymentTarget\" ";
+			shellScript = "deploymentTarget=$DEPLOYMENT_TARGET\n\nif [ ! -d \"$deploymentTarget\" ]; then\nmkdir \"$deploymentTarget\"\nfi\n\nsh ../../../../../PurpleTools/buildUniversalLib.sh DTFoundation $LIB_BASE_NAME \"$deploymentTarget\" ";
 		};
 		379B69EA177CC0B2001174E8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1379,7 +1379,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "deploymentTarget=$DEPLOYMENT_TARGET\n\nif [ ! -d \"$deploymentTarget\" ]; then\nmkdir \"$deploymentTarget\"\nfi\npwd\nsh ../../../../../buildUniversalLib.sh DTHTMLParser $LIB_BASE_NAME \"$deploymentTarget\"";
+			shellScript = "deploymentTarget=$DEPLOYMENT_TARGET\n\nif [ ! -d \"$deploymentTarget\" ]; then\nmkdir \"$deploymentTarget\"\nfi\n\nsh ../../../../../PurpleTools/buildUniversalLib.sh DTHTMLParser $LIB_BASE_NAME \"$deploymentTarget\"";
 		};
 		A7BAD1071483F934000E2B6A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2062,6 +2062,7 @@
 				379B69C7177CBE4E001174E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		379B69FD177CC0B2001174E8 /* Build configuration list for PBXAggregateTarget "DTHTMLParser_universal" */ = {
 			isa = XCConfigurationList;
@@ -2070,6 +2071,7 @@
 				379B69FF177CC0B2001174E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A70B4CEF1486637E00873A4A /* Build configuration list for PBXNativeTarget "DTFoundation" */ = {
 			isa = XCConfigurationList;
