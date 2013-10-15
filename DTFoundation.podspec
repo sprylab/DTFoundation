@@ -1,10 +1,11 @@
 Pod::Spec.new do |spec|
   spec.name         = 'DTFoundation'
-  spec.version      = '1.5.3'
+  spec.version      = '1.7.0'
   spec.summary      = "Standard toolset classes and categories."
   spec.homepage     = "https://github.com/Cocoanetics/DTFoundation"
   spec.author       = { "Oliver Drobnik" => "oliver@drobnik.com" }
-  spec.source       = { :git => "https://github.com/Cocoanetics/DTFoundation.git", :tag => spec.version.to_s }
+#  spec.source       = { :git => "https://github.com/Cocoanetics/DTFoundation.git", :tag => spec.version.to_s }
+  spec.source       = { :git => "git@github.com:artifacts/DTFoundation.git", :branch => 'develop' }
   spec.license      = 'BSD'
   spec.requires_arc = true
 
@@ -55,9 +56,10 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'DTHTMLParser' do |ss|
+    ss.osx.deployment_target = '10.6'
     ss.ios.deployment_target = '4.3'
     ss.dependency 'DTFoundation/Core'
-    ss.source_files = 'Core/Source/DTHTMLParser/*.{h,m}'
+    ss.ios.source_files = 'Core/Source/DTHTMLParser/*.{h,m}'
     ss.library = 'xml2'
     ss.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
   end
