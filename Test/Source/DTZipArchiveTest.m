@@ -11,6 +11,13 @@
 #import "DTZipArchiveGZip.h"
 #import "DTZipArchiveNode.h"
 
+
+@interface DTZipArchivePKZip (private)
+
+@property (readonly, nonatomic) dispatch_queue_t uncompressingQueue;
+
+@end
+
 @implementation DTZipArchiveTest
 
 - (void)tearDown
@@ -591,14 +598,20 @@
 	NSBundle *testBundle = [NSBundle bundleForClass:[self class]];
 	NSString *sampleZipPath = [testBundle pathForResource:@"gzip_sample.txt" ofType:@"gz"];
 	
-	DTZipArchive *zipArchive = [DTZipArchive archiveAtPath:sampleZipPath];
+	DTZipArchivePKZip *zipArchive = (DTZipArchivePKZip *)[DTZipArchive archiveAtPath:sampleZipPath];
+	
+	// suspend the queue to let us set the cancel
+	dispatch_suspend(zipArchive.uncompressingQueue);
 	
 	[zipArchive uncompressToPath:[testBundle bundlePath] completion:^(NSError *error) {
 		
 		STFail(@"Should not complete uncompressing after cancel was called");
 	}];
 	
+	// resume
 	[zipArchive cancelAllUncompressing];
+	
+	dispatch_resume(zipArchive.uncompressingQueue);
 	
 	[NSThread sleepForTimeInterval:0.2];
 }
@@ -796,8 +809,17 @@
 	
 	dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
 	
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	NSString *tmpDirPath = [NSString pathForTemporaryFile];
+	NSURL *pathURL = [NSURL fileURLWithPath:tmpDirPath];
+	
+	NSDictionary *attributes = @{NSFilePosixPermissions: @(555)};
+	
+	BOOL createFolderWithoutWritePermission = [fileManager createDirectoryAtURL:pathURL withIntermediateDirectories:NO attributes:attributes error:NULL];
+	STAssertTrue(createFolderWithoutWritePermission, @"Cannot create tmp folder with 555");
+	
 	// Uncompress to folder with permission denied
-	[zipArchive uncompressToPath:@"/Library/" completion:^(NSError *error) {
+	[zipArchive uncompressToPath:tmpDirPath completion:^(NSError *error) {
 			
 		dispatch_semaphore_signal(semaphore);
 		
