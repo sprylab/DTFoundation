@@ -58,4 +58,5 @@
 #endif
 
 // Utility Functions
-#import "DTUtils.h"
+#import "DTCoreGraphicsUtils.h"
+#import "DTLog.h"

@@ -17,6 +17,7 @@
     BOOL _directory;
 }
 
+#ifndef COVERAGE
 - (NSString *)description
 {
     if (self.isDirectory)
@@ -28,11 +29,22 @@
         return [NSString stringWithFormat:@"<%@ name='%@'>", NSStringFromClass([self class]), self.name];
     }
 }
+#endif
 
 #pragma mark - Properties
 
 @synthesize name = _name;
 @synthesize fileSize = _fileSize;
 @synthesize directory = _directory;
+
+- (NSMutableArray *)children
+{
+	if (!_children)
+	{
+		_children = [[NSMutableArray alloc] init];
+	}
+
+	return _children;
+}
 
 @end
