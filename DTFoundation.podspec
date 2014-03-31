@@ -65,7 +65,7 @@ Pod::Spec.new do |spec|
     ss.ios.deployment_target = '5.0'
     ss.osx.deployment_target = '10.6'
     ss.framework = 'SystemConfiguration'
-    ss.source_files = 'Core/Source/DTReachability/*.{h,m}'
+    ss.source_files = 'Core/Source/DTReachability/*.{h,m}', 'Core/Source/DTLog.h'
   end
 
   spec.subspec 'DTSidePanel' do |ss|
@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
     ss.ios.deployment_target = '5.0'
     ss.osx.deployment_target = '10.6'
     ss.library = 'sqlite3'
-    ss.source_files = 'Core/Source/DTSQLite/*.{h,m}'
+    ss.source_files = 'Core/Source/DTSQLite/*.{h,m}', 'Core/Source/DTLog.h'
   end
 
   spec.subspec 'DTUTI' do |ss|
