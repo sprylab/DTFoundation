@@ -4,8 +4,8 @@ Pod::Spec.new do |spec|
   spec.summary      = "Standard toolset classes and categories."
   spec.homepage     = "https://github.com/Cocoanetics/DTFoundation"
   spec.author       = { "Oliver Drobnik" => "oliver@drobnik.com" }
-#  spec.source       = { :git => "https://github.com/Cocoanetics/DTFoundation.git", :tag => spec.version.to_s }
-  spec.source       = { :git => "git@github.com:artifacts/DTFoundation.git", :branch => 'develop' }
+  spec.source       = { :git => "https://github.com/Cocoanetics/DTFoundation.git", :tag => spec.version.to_s }
+#  spec.source       = { :git => "git@github.com:artifacts/DTFoundation.git", :branch => 'develop' }
 
   spec.ios.deployment_target = '5.0'
   spec.osx.deployment_target = '10.6'
