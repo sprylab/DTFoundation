@@ -1,29 +1,33 @@
 Pod::Spec.new do |spec|
   spec.name         = 'DTFoundation'
-  spec.version      = '1.7.0'
+  spec.version      = '1.7.2'
   spec.summary      = "Standard toolset classes and categories."
   spec.homepage     = "https://github.com/Cocoanetics/DTFoundation"
   spec.author       = { "Oliver Drobnik" => "oliver@drobnik.com" }
-#  spec.source       = { :git => "https://github.com/Cocoanetics/DTFoundation.git", :tag => spec.version.to_s }
-  spec.source       = { :git => "git@github.com:artifacts/DTFoundation.git", :branch => 'develop' }
+  spec.source       = { :git => "https://github.com/artifacts/DTFoundation.git", :tag => spec.version.to_s }
+#  spec.source       = { :git => "git@github.com:artifacts/DTFoundation.git", :branch => 'develop' }
+
+  spec.ios.deployment_target = '5.0'
+  spec.osx.deployment_target = '10.6'
+  
   spec.license      = 'BSD'
   spec.requires_arc = true
 
   spec.subspec 'Core' do |ss|
-    ss.ios.deployment_target = '4.3'
+    ss.ios.deployment_target = '5.0'
     ss.osx.deployment_target = '10.6'
     ss.source_files = 'Core/Source/*.{h,m}'
   end
 
   spec.subspec 'UIKit' do |ss|
-    ss.platform = :ios, '4.3'
+    ss.platform = :ios, '5.0'
     ss.dependency 'DTFoundation/Core'
     ss.ios.frameworks = 'QuartzCore'
     ss.ios.source_files = 'Core/Source/iOS/*.{h,m}'
   end
 
   spec.subspec 'UIKit_BlocksAdditions' do |ss|
-    ss.platform = :ios, '4.3'
+    ss.platform = :ios, '5.0'
     ss.dependency 'DTFoundation/Core'
     ss.ios.source_files = 'Core/Source/iOS/BlocksAdditions/*.{h,m}'
   end
@@ -35,14 +39,14 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'DTAWS' do |ss|
-    ss.ios.deployment_target = '4.3'
+    ss.ios.deployment_target = '5.0'
     ss.osx.deployment_target = '10.6'
     ss.dependency 'DTFoundation/Core'
     ss.source_files = 'Core/Source/DTAWS/*.{h,m}'
   end
 
   spec.subspec 'DTASN1' do |ss|
-    ss.ios.deployment_target = '4.3'
+    ss.ios.deployment_target = '5.0'
     ss.osx.deployment_target = '10.6'
     ss.dependency 'DTFoundation/Core'
     ss.source_files = 'Core/Source/DTASN1/*.{h,m}'
@@ -50,7 +54,7 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'DTHTMLParser' do |ss|
     ss.osx.deployment_target = '10.6'
-    ss.ios.deployment_target = '4.3'
+    ss.ios.deployment_target = '5.0'
     ss.dependency 'DTFoundation/Core'
     ss.source_files = 'Core/Source/DTHTMLParser/*.{h,m}'
     ss.library = 'xml2'
@@ -58,10 +62,10 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'DTReachability' do |ss|
-    ss.ios.deployment_target = '4.3'
+    ss.ios.deployment_target = '5.0'
     ss.osx.deployment_target = '10.6'
     ss.framework = 'SystemConfiguration'
-    ss.source_files = 'Core/Source/DTReachability/*.{h,m}'
+    ss.source_files = 'Core/Source/DTReachability/*.{h,m}', 'Core/Source/DTLog.h'
   end
 
   spec.subspec 'DTSidePanel' do |ss|
@@ -72,20 +76,20 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'DTSQLite' do |ss|
-    ss.ios.deployment_target = '4.3'
+    ss.ios.deployment_target = '5.0'
     ss.osx.deployment_target = '10.6'
     ss.library = 'sqlite3'
-    ss.source_files = 'Core/Source/DTSQLite/*.{h,m}'
+    ss.source_files = 'Core/Source/DTSQLite/*.{h,m}', 'Core/Source/DTLog.h'
   end
 
   spec.subspec 'DTUTI' do |ss|
-    ss.ios.deployment_target = '4.3'
+    ss.ios.deployment_target = '5.0'
     ss.ios.frameworks = ['MobileCoreServices']
     ss.source_files = 'Core/Source/DTUTI/*.{h,m}'
   end
 
   spec.subspec 'DTZipArchive' do |ss|
-    ss.ios.deployment_target = '4.3'
+    ss.ios.deployment_target = '5.0'
     ss.source_files = 'Core/Source/DTZipArchive/*.{h,m}'
     ss.library = 'z'
 
