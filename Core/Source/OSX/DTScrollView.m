@@ -10,6 +10,10 @@
 
 @implementation DTScrollView
 
++ (BOOL)isCompatibleWithResponsiveScrolling {
+    return YES;
+}
+
 - (void)scrollWheel:(NSEvent *)theEvent
 {
 	BOOL shouldForwardScroll = NO;
