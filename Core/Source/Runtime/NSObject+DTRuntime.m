@@ -37,6 +37,8 @@ static char DTRuntimeDeallocBlocks;
 
 + (BOOL)addInstanceMethodWithSelectorName:(NSString *)selectorName block:(void(^)(id))block
 {
+#if 0
+#error this no longer compies with Xcode 8
     // don't accept nil name
     NSParameterAssert(selectorName);
     
@@ -55,6 +57,8 @@ static char DTRuntimeDeallocBlocks;
     
     SEL selector = NSSelectorFromString(selectorName);
     return class_addMethod(self, selector, myIMP, "v@:");
+#endif
+    return NO;
 }
 
 #pragma mark - Method Swizzling

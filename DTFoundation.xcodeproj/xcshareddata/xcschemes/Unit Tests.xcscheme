@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A7D60FCE15D3B0BC00AEDD1B"
-               BuildableName = "UnitTests.octest"
+               BuildableName = "UnitTests.xctest"
                BlueprintName = "Unit Tests"
                ReferencedContainer = "container:DTFoundation.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A7D60FCE15D3B0BC00AEDD1B"
-               BuildableName = "UnitTests.octest"
+               BuildableName = "UnitTests.xctest"
                BlueprintName = "Unit Tests"
                ReferencedContainer = "container:DTFoundation.xcodeproj">
             </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A7D60FCE15D3B0BC00AEDD1B"
-            BuildableName = "UnitTests.octest"
+            BuildableName = "UnitTests.xctest"
             BlueprintName = "Unit Tests"
             ReferencedContainer = "container:DTFoundation.xcodeproj">
          </BuildableReference>
