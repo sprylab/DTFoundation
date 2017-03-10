@@ -37,6 +37,7 @@ static char DTRuntimeDeallocBlocks;
 
 + (BOOL)addInstanceMethodWithSelectorName:(NSString *)selectorName block:(void(^)(id))block
 {
+#error this no longer compies with Xcode 8
     // don't accept nil name
     NSParameterAssert(selectorName);
     
@@ -48,7 +49,7 @@ static char DTRuntimeDeallocBlocks;
 #if MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_7
     void *impBlockForIMP = (void *)objc_unretainedPointer(block);
 #else
-    id impBlockForIMP = (__bridge id)objc_unretainedPointer(block);
+    id impBlockForIMP = (__bridge id)(__bridge void *)(block);
 #endif
     
     IMP myIMP = imp_implementationWithBlock(impBlockForIMP);
