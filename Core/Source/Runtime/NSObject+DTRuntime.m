@@ -37,7 +37,6 @@ static char DTRuntimeDeallocBlocks;
 
 + (BOOL)addInstanceMethodWithSelectorName:(NSString *)selectorName block:(void(^)(id))block
 {
-#error this no longer compies with Xcode 8
     // don't accept nil name
     NSParameterAssert(selectorName);
     
