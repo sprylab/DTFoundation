@@ -5,7 +5,6 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/Cocoanetics/DTFoundation"
   spec.author       = { "Oliver Drobnik" => "oliver@drobnik.com" }
   spec.source       = { :git => "https://github.com/sprylab/DTFoundation.git", :tag => spec.version.to_s }
-#  spec.source       = { :git => "git@github.com:artifacts/DTFoundation.git", :branch => 'develop' }
 
   spec.ios.deployment_target = '8.0'
   spec.osx.deployment_target = '10.8'
@@ -20,20 +19,20 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'UIKit' do |ss|
-    ss.platform = :ios, '5.0'
+    ss.platform = :ios, '8.0'
     ss.dependency 'DTFoundation/Core'
     ss.ios.frameworks = 'QuartzCore'
     ss.ios.source_files = 'Core/Source/iOS/*.{h,m}'
   end
 
   spec.subspec 'UIKit_BlocksAdditions' do |ss|
-    ss.platform = :ios, '5.0'
+    ss.platform = :ios, '8.0'
     ss.dependency 'DTFoundation/Core'
     ss.ios.source_files = 'Core/Source/iOS/BlocksAdditions/*.{h,m}'
   end
 
   spec.subspec 'AppKit' do |ss|
-    ss.platform = :osx, '10.6'
+    ss.platform = :osx, '10.8'
     ss.dependency 'DTFoundation/Core'
     ss.osx.source_files = 'Core/Source/OSX/*.{h,m}'
   end
@@ -65,11 +64,12 @@ Pod::Spec.new do |spec|
     ss.ios.deployment_target = '8.0'
     ss.osx.deployment_target = '10.8'
     ss.framework = 'SystemConfiguration'
-    ss.source_files = 'Core/Source/DTReachability/*.{h,m}', 'Core/Source/DTLog.h'
+    ss.source_files = 'Core/Source/DTReachability/*.{h,m}'
+    ss.dependency 'DTFoundation/Core'
   end
 
   spec.subspec 'DTSidePanel' do |ss|
-    ss.platform = :ios, '5.0'
+    ss.platform = :ios, '8.0'
     ss.dependency 'DTFoundation/UIKit'
     ss.ios.frameworks = 'QuartzCore'
     ss.ios.source_files = 'Core/Source/iOS/DTSidePanel/*.{h,m}'
@@ -79,7 +79,8 @@ Pod::Spec.new do |spec|
     ss.ios.deployment_target = '8.0'
     ss.osx.deployment_target = '10.8'
     ss.library = 'sqlite3'
-    ss.source_files = 'Core/Source/DTSQLite/*.{h,m}', 'Core/Source/DTLog.h'
+    ss.source_files = 'Core/Source/DTSQLite/*.{h,m}'
+    ss.dependency 'DTFoundation/Core'
   end
 
   spec.subspec 'DTUTI' do |ss|
