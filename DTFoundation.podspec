@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'DTFoundation'
-  spec.version      = '2.1.1'
+  spec.version      = '2.2.0-dev'
   spec.summary      = "Standard toolset classes and categories."
   spec.homepage     = "https://github.com/Cocoanetics/DTFoundation"
   spec.author       = { "Oliver Drobnik" => "oliver@drobnik.com" }
