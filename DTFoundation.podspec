@@ -12,6 +12,7 @@ Pod::Spec.new do |spec|
   spec.license      = 'BSD'
   spec.requires_arc = true
 
+
   spec.subspec 'Core' do |ss|
     ss.ios.deployment_target = '9.0'
     ss.osx.deployment_target = '10.8'
@@ -80,6 +81,7 @@ Pod::Spec.new do |spec|
     ss.osx.deployment_target = '10.8'
     ss.library = 'sqlite3'
     ss.source_files = 'Core/Source/DTSQLite/*.{h,m}'
+    ss.private_header_files = 'Core/Source/DTSQLite/DTSQLiteFunctions.h'
     ss.dependency 'DTFoundation/Core'
   end
 
@@ -98,7 +100,14 @@ Pod::Spec.new do |spec|
     # ss.dependency 'Minizip'
     ss.subspec 'Minizip' do |sss|
       sss.source_files = 'Core/Source/Externals/minizip/*.{h,c}'
+      sss.private_header_files = 'Core/Source/Externals/minizip/*.h'
     end
+  end
+  
+  spec.subspec 'Runtime' do |ss|
+    ss.ios.deployment_target = '9.0'
+    ss.osx.deployment_target = '10.8'
+    ss.source_files = 'Core/Source/Runtime/*.{h,m}'
   end
 
 end
