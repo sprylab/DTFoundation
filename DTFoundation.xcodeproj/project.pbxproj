@@ -231,7 +231,6 @@
 		A7D0AA6E153C39920020F18B /* DTCoreGraphicsUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A7D0AA6B153C39920020F18B /* DTCoreGraphicsUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7D0AA6F153C39920020F18B /* DTCoreGraphicsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0AA6C153C39920020F18B /* DTCoreGraphicsUtils.m */; };
 		A7D0AA70153C39920020F18B /* DTCoreGraphicsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0AA6C153C39920020F18B /* DTCoreGraphicsUtils.m */; };
-		A7D60FD115D3B0BC00AEDD1B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D60FD015D3B0BC00AEDD1B /* SenTestingKit.framework */; };
 		A7D60FD315D3B0BC00AEDD1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F4DFFA147FD08F00F4059A /* Foundation.framework */; };
 		A7D60FEC15D3B16900AEDD1B /* DTVersionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D60FE915D3B15300AEDD1B /* DTVersionTest.m */; };
 		A7D60FEF15D3B18A00AEDD1B /* DTHTMLParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D60FEE15D3B18A00AEDD1B /* DTHTMLParserTest.m */; };
@@ -700,8 +699,7 @@
 		A7D0AA49153C233E0020F18B /* NSString+DTUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DTUtilities.m"; sourceTree = "<group>"; };
 		A7D0AA6B153C39920020F18B /* DTCoreGraphicsUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCoreGraphicsUtils.h; sourceTree = "<group>"; };
 		A7D0AA6C153C39920020F18B /* DTCoreGraphicsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCoreGraphicsUtils.m; sourceTree = "<group>"; };
-		A7D60FCF15D3B0BC00AEDD1B /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7D60FD015D3B0BC00AEDD1B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A7D60FCF15D3B0BC00AEDD1B /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D60FE815D3B15300AEDD1B /* DTVersionTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTVersionTest.h; sourceTree = "<group>"; };
 		A7D60FE915D3B15300AEDD1B /* DTVersionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTVersionTest.m; sourceTree = "<group>"; };
 		A7D60FEA15D3B15300AEDD1B /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
@@ -903,7 +901,6 @@
 				FAB1725C163004CA00B44EDC /* CoreGraphics.framework in Frameworks */,
 				A7D60FF815D3B28B00AEDD1B /* libxml2.dylib in Frameworks */,
 				FAB1724D162FFF5300B44EDC /* MobileCoreServices.framework in Frameworks */,
-				A7D60FD115D3B0BC00AEDD1B /* SenTestingKit.framework in Frameworks */,
 				A7D60FD315D3B0BC00AEDD1B /* Foundation.framework in Frameworks */,
 				FAF37A6E17AFE07F009AC27C /* libz.1.2.5.dylib in Frameworks */,
 			);
@@ -1293,7 +1290,6 @@
 				A7C619EF162D8D84002C0C1A /* MobileCoreServices.framework */,
 				FAB1725D163004FF00B44EDC /* QuartzCore.framework */,
 				FAF37A6F17AFE098009AC27C /* QuickLook.framework */,
-				A7D60FD015D3B0BC00AEDD1B /* SenTestingKit.framework */,
 				A7D9D6631758CA6300C29B6F /* SystemConfiguration.framework */,
 				A7F4DFF8147FD08900F4059A /* UIKit.framework */,
 				A7E889A516A9B190009EF0DF /* Cocoa.framework */,
@@ -1518,7 +1514,7 @@
 			children = (
 				A7BAD10E1483F934000E2B6A /* DTFoundation.framework */,
 				A70B4CE71486637E00873A4A /* libDTFoundation.a */,
-				A7D60FCF15D3B0BC00AEDD1B /* UnitTests.octest */,
+				A7D60FCF15D3B0BC00AEDD1B /* UnitTests.xctest */,
 				A710A5001607556000437D36 /* libDTFoundation_Mac.a */,
 				A7E383C2160DFEDB00CF72D6 /* libDTHTMLParser_iOS.a */,
 				A7E383DA160DFF8600CF72D6 /* libDTZipArchive_iOS.a */,
@@ -1958,8 +1954,8 @@
 			);
 			name = "Unit Tests";
 			productName = UnitTest;
-			productReference = A7D60FCF15D3B0BC00AEDD1B /* UnitTests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
+			productReference = A7D60FCF15D3B0BC00AEDD1B /* UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A7D8C7AF1723174600025675 /* DTZipArchive (Mac) */ = {
 			isa = PBXNativeTarget;
@@ -2788,6 +2784,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PREFIX_HEADER = "Test/UnitTests-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -2797,7 +2794,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drobnik.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = UnitTests;
 				SDKROOT = iphoneos;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Coverage;
 		};
@@ -3415,6 +3411,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PREFIX_HEADER = "Test/UnitTests-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -3424,7 +3421,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drobnik.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = UnitTests;
 				SDKROOT = iphoneos;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -3437,6 +3433,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PREFIX_HEADER = "Test/UnitTests-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -3446,7 +3443,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drobnik.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = UnitTests;
 				SDKROOT = iphoneos;
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
