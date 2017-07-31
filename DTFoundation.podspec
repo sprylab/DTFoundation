@@ -20,14 +20,14 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'UIKit' do |ss|
-    ss.platform = :ios, '8.0'
+    ss.platform = :ios, '9.0'
     ss.dependency 'DTFoundation/Core'
     ss.ios.frameworks = 'QuartzCore'
     ss.ios.source_files = 'Core/Source/iOS/*.{h,m}'
   end
 
   spec.subspec 'UIKit_BlocksAdditions' do |ss|
-    ss.platform = :ios, '8.0'
+    ss.platform = :ios, '9.0'
     ss.dependency 'DTFoundation/Core'
     ss.ios.source_files = 'Core/Source/iOS/BlocksAdditions/*.{h,m}'
   end
@@ -70,7 +70,7 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'DTSidePanel' do |ss|
-    ss.platform = :ios, '8.0'
+    ss.platform = :ios, '9.0'
     ss.dependency 'DTFoundation/UIKit'
     ss.ios.frameworks = 'QuartzCore'
     ss.ios.source_files = 'Core/Source/iOS/DTSidePanel/*.{h,m}'
