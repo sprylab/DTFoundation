@@ -47,7 +47,6 @@
 	#import "UIApplication+DTNetworkActivity.h"
 	#import "UIImage+DTFoundation.h"
 	#import "UIView+DTFoundation.h"
-	#import "UIWebView+DTFoundation.h"
 	#import "UIView+DTActionHandlers.h"
 #else
 	#import "NSImage+DTUtilities.h"
